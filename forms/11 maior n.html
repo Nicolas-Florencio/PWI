@@ -1,0 +1,35 @@
+<!--Mostra a sequência de números até o número digitado pelo usuário-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/forms.css">
+    <meta charset="UTF-8">
+    <title>Números impressos</title>
+    <script>
+        function num() {
+            var n = parseInt(document.f1.n.value);
+            var i = parseInt (0);
+            if (n > 0){
+                while (i < n){
+                    i++
+                    document.write(i + "<br>");
+                 }
+            }
+            else {
+            alert("Valor inserido é inválido!")
+        }
+        }
+    </script>
+<body>
+    <form name="f1" action="">
+        <fieldset>
+                <legend>Números impressos</legend>
+                Escolha um número maior que zero: <input type="text" name="n">
+        </fieldset>
+    </form>
+    <br>
+    <button onclick="num()"Calcular>Calcular</button>
+</body>
+</head>
+</html>

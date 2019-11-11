@@ -1,0 +1,35 @@
+<!--Calcula a tabuada de um número entre 1 e 10-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/forms.css">
+    <meta charset="UTF-8">
+    <title>Tabuadas</title>
+    <script>
+        function mult() {
+        var n = parseInt (document.f1.n.value);
+        if (n < 11 && n > 0){
+            document.write ("<p>Tabuadas</p>");
+        for (var i = 0; i<11; i++){
+            var tabuada = n * i;
+            document.write(tabuada + "<br>");
+        }
+        }
+        else {
+            alert("Valor inserido é inválido!")
+        }
+        }
+    </script>
+<body>
+    <form name="f1" action="">
+        <fieldset>
+                <legend>Tabuada</legend>
+                escolha uma tabuada de 0 a 10: <input type="text" name="n">
+        </fieldset>
+    </form>
+    <br>
+    <button onclick="mult()"Total>Total</button>
+</body>
+</head>
+</html>

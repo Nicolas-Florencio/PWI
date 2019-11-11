@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../jQuery/Js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).hide();
+            });
+            $("p, h1, h2").click(function (){
+                $(this).hide();
+            });
+        });
+    </script>
+    <title>Oculta 3</title>
+</head>
+<body>
+    <h1>Oculta e mostra elemento clicado</h1>
+
+    <h2>Cabeçalho</h2>
+
+    <p>Isso é um parágrafo</p>
+
+    <p>Isso é outro parágrafo</p>
+
+    <button>Ocultar</button>
+</body>
+</html>

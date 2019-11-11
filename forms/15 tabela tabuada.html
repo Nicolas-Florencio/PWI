@@ -1,0 +1,49 @@
+<!--Mostra as tabuadas de 1 a 10 dentro de uma tabela-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/forms.css">
+    <meta charset="UTF-8">
+    <title>Tabela de tabuadas de 1 a 10</title>
+    <script>
+        function mult() {
+        let tableResults = document.getElementById("table-results");
+        for(var i = 1; i<11; i++){
+            for (var l = 1; l<=10; l++){
+                let tr = document.createElement("tr");
+                    tr.innerHTML = `
+                    <td>${i} x ${l}</td>
+                    <td>${i * l}
+                    </tr>
+                    `;
+                tableResults.appendChild(tr);
+        }
+    }
+}
+    </script>
+</head>
+<body>
+    <form name="as" action="">
+        <fieldset>
+                <legend>Tabuada</legend>
+                Clique no botão para ver as tabuadas
+        </fieldset>
+    </form>
+    <br>
+    <button onclick="mult()"Total>Total</button>
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Multiplicação</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="table-results">
+            <tr>
+
+            </tr>
+        </tbody>
+        </table>
+</body>
+</html>

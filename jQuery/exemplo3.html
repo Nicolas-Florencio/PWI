@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeira página com jQuery</title>
+    <!--<script src="../jQuery/Js/jquery-3.4.1.js" type="text/javascript"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    function funcao (){
+        alert ("Eu sou uma função!");
+    }
+    $(document).ready(funcao);
+    //$ (funcao);
+    //$ (window).load(funcao);
+    </script>
+</head>
+<body>
+    <div>Maneira longa usando
+        <pre>
+            $(function(){
+                console.log("A página foi lida com sucesso!");
+            });
+        </pre>
+    </div>
+</body>
+</html>

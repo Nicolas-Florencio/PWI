@@ -1,0 +1,31 @@
+<!--Mostra todas as tabuadas de 1 a 10-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/forms.css">
+    <meta charset="UTF-8">
+    <title>Tabuadas impressas de 1 a 10</title>
+    <script>
+        function mult() {
+        for (var i = 1; i<11; i++) {
+            document.write ("<p>Tabuada do " + i + " </p>");
+            for (var j = 1; j<11; j++){
+                document.write (i + " x " + j + " = " + (i * j) + "<br>");
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <form name="as" action="">
+        <fieldset>
+                <legend>Tabuada</legend>
+                Clique no botão para ver as tabuadas
+                <p></p>
+        </fieldset>
+    </form>
+    <br>
+    <button onclick="mult()"Total>Total</button>
+</body>
+</html>
