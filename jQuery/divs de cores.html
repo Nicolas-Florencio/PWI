@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Troca imagem</title>
+    <script src="Js/jquery-3.4.1.js" type="text/javascript"></script>    
+    <script>
+    $ (document).ready (function() {
+        $(".pequeno").click(function() {
+            var caminho = $(this).attr("src");
+            $("#troca").attr("src", caminho);
+        });
+    });
+    </script>
+
+    <style type="text/css">
+    #div1 {
+        width: 400px;
+        height: 300px;
+    }
+    .pequeno {
+        float: left;
+        height: 60px;
+        width: 80px;
+        margin: 10px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+        <img src="CSS/a.png" alt="" id="troca" width="400" height="300">
+    </div>
+
+    <br>
+    <br>
+
+    <div id="icone">
+        <img class="pequeno" src="CSS/a.png" alt="" width="80" height="80">
+        <img class="pequeno" src="CSS/az.png" alt="" width="80" height="80">
+        <img class="pequeno" src="CSS/verd.jpg" alt="" width="80" height="80">
+        <img class="pequeno" src="CSS/v.jpg" alt="" width="80" height="80">
+    </div>
+
+</body>
+</html>
