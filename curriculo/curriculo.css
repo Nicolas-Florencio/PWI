@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#container {
+    width: 930px;
+    margin: 2px 410px 2px 240px;
+    border: 1px dotted black;
+}
+
+#container-name {
+    text-align: center;
+    width: 850px;
+    margin-left: 290px;
+    margin-top: 40px;
+    border: 2px solid black;
+    background-color: rgba(240, 240, 240, 0.74);
+}
+
+.container-curriculum {
+    margin-left: 5px;
+    width: 930px;
+    font-family: sans-serif;
+}
+
+.subtitle {
+    width: 930px;
+    text-align: left;
+    font-weight: bold;
+    background: rgba(209, 209, 209, 0.801);
+}
